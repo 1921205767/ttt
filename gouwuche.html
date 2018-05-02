@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./src/App.css">
+    <link rel="stylesheet" href="./fontcss/iconfont.css">
+</head>
+<body>
+<div id="header4">
+    <i class="iconfont icon-fanhui" style="font-size:1rem;"></i>
+    <div class="header-font">购物车</div>
+    <font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>
+</div>
+<div class="list">
+    <span>
+        <ul>
+        <li>所有商品免邮</li>
+        </ul>
+    </span>
+    <span>
+        <ul>
+           <li>24小时极速发货</li>
+        </ul>
+    </span>
+    <span>
+        <ul>
+           <li>14天无忧退款</li>
+        </ul>
+    </span>
+</div>
+<div class="Order2 Order2-there">
+    <span>√</span>
+    <font>萌宝宝家具旗舰店</font>
+    <span>
+
+    </span>
+</div>
+<div class="products_description-shop">
+    <div>
+        <span>√</span>
+    </div>
+    <div>
+        <span></span>
+    </div>
+    <div>
+        <div>
+            <p>土星儿童床单</p>
+            <p>卡通床单 200cm × 180cm</p>
+        </div>
+        <div>
+            <font>￥689.00</font>
+            <p><button class="btn">-</button><button class="btn-number">3</button><button class="btn">+</button></p>
+        </div>
+    </div>
+</div>
+<div class="products_description-shop">
+    <div>
+        <span>√</span>
+    </div>
+    <div>
+        <span></span>
+    </div>
+    <div>
+        <div>
+            <p>土星儿童床单</p>
+            <p>卡通床单 200cm × 180cm</p>
+        </div>
+        <div>
+            <font>￥689.00</font>
+            <p><button class="btn">-</button><button class="btn-number">3</button><button class="btn">+</button></p>
+        </div>
+    </div>
+
+</div>
+<div class="Order2 Order2-there Order2-four">
+    <span>√</span>
+    <font>萌宝宝家具旗舰店</font>
+    <span>
+
+    </span>
+</div>
+<div class="products_description-shop">
+    <div>
+        <span id="dis">√</span>
+    </div>
+    <div>
+        <span></span>
+    </div>
+    <div>
+        <div>
+            <p>土星儿童床单</p>
+            <p>卡通床单 200cm × 180cm</p>
+        </div>
+        <div>
+            <font>￥689.00</font>
+            <p><button class="btn">-</button><button class="btn-number">3</button><button class="btn">+</button></p>
+        </div>
+    </div>
+</div>
+<div class="Order2 Order2-there Order2-five">
+    <div>
+    <span>√</span>
+    <font>全选 (3)</font>
+    </div>
+    <div>
+        <font>总计</font>
+        <font>￥998.00</font>
+    </div>
+    <div>
+        结算
+    </div>
+</div>
+<div id="bottom">
+    <div>
+        <span class="iconfont icon-shouye" style="font-size:1rem;"></span>
+        首页
+    </div>
+    <div>
+        <span class="iconfont icon-fenlei" style="font-size:1rem;"></span>
+        分类
+    </div>
+    <div>
+        <span class="iconfont icon-daohanggouwuche" style="font-size:1rem;"></span>
+        购物车
+    </div>
+    <div>
+        <span class="iconfont icon-icon--" style="font-size:1rem;"></span>
+        个人
+    </div>
+</div>
+<div></div>
+</body>
+<script>
+    window.addEventListener('onorientationchange',setRem);
+    window.addEventListener('resize',setRem);
+    setRem();
+    function  setRem() {
+        var html=document.querySelector('html');
+        var  width=html.getBoundingClientRect().width;//视口宽度
+        console.log(width)
+        html.style.fontSize=width/16+'px';//1rem=width/16
+    }
+</script>
+</html>
