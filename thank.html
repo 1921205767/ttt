@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./src/App.css">
+    <link rel="stylesheet" href="./fontcss/iconfont.css">
+</head>
+<body>
+<div id="header4">
+    <i class="iconfont icon-fanhui" style="font-size:1rem;"></i>
+    <div class="header-font">评价晒单</div>
+    <font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>
+</div>
+<div id="main">
+        <img src="images/index_07.png">
+        <font>感谢评论！</font>
+</div>
+<div id="title">
+        继续评价赚微豆～
+</div>
+<div class="products">
+    <div>
+        <img src="images/index_11.png">
+    </div>
+    <div>
+        <div>
+            <p>土星儿童床单</p>
+            <p>卡通床单 200cm × 180cm</p>
+        </div>
+        <div>
+            <button>评价晒单</button>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    window.addEventListener('onorientationchange',setRem);
+    window.addEventListener('resize',setRem);
+    setRem();
+    function  setRem() {
+        var html=document.querySelector('html');
+        var  width=html.getBoundingClientRect().width;//视口宽度
+        console.log(width)
+        html.style.fontSize=width/16+'px';//1rem=width/16
+    }
+</script>
+</html>
